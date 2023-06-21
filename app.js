@@ -83,7 +83,7 @@ function addNewNote(){
 function updateSL(){
     const notesText = document.querySelectorAll("li");
     const notes = [];
-    notesText.forEach(note => (notes.push(note.innerText)));
+    notesText.forEach(li => (notes.push(li.innerText)));
     localStorage.setItem('notes', JSON.stringify(notes));
 }
 
